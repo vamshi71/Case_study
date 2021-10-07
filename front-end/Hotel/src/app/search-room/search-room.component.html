@@ -1,0 +1,36 @@
+<button mat-raised-button color="primary" routerLink="/home">HOME</button>
+<form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+  <div class="search">  
+  <h3>Search Room</h3>
+    <mat-form-field appearance="fill">
+      <mat-label>Room Type</mat-label>
+      <mat-select [(ngModel)]="roomType" name="room">
+        <mat-option *ngFor="let room of rooms" [value]="room.value">
+          {{room.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" (click)='refershRoomList()'>Search</button>
+
+    <table class="responsive-table highlight">
+      <thead>
+        <tr>
+          <th>ROOM NO</th>
+          <th>ROOM TYPE</th>
+          <th>PRICE </th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tr *ngFor="let rom of roomService.rooms">
+       <td>{{rom.roomNo}}</td>
+       <td>{{rom.roomType}}</td>
+       <td>{{rom.price}}</td>
+       <td (click)="onSelect(rom)">
+      <button mat-raised-button color="accent">Book the room</button>
+      </td>
+      </tr>
+    </table>
+  </div>
+  </form>

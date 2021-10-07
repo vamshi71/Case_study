@@ -1,0 +1,64 @@
+/*.row{
+    background: rgb(24, 126, 185);
+}*/
+
+
+/* .back{
+  
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background: #a54d4d;
+    background-image: url("https://media.istockphoto.com/vectors/hotel-reception-and-travellers-talking-with-receptionistsindoors-vector-id1175402621?k=20&m=1175402621&s=612x612&w=0&h=3LXJHTMM0PnSK4w0rUkIZHj957vRUBq6gLGlsE_6-lo=");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+form div.input-field input{
+    padding-left: 15px !important;
+    color: #c2820b;
+}
+
+input.ng-invalid.ng-dirty{
+    border-bottom-color : #e91e63 !important;
+    box-shadow: 0 1px 0 0 #e91e63 !important;
+}
+
+.input-field>label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-custom,.btn-custom:hover,.btn-custom:focus{
+    background-color: transparent;
+    font-size: 1.1rem;
+    margin : 0px 5px;
+    border: #fff solid 1px ;
+    text-transform:none;
+}
+
+div.card{
+    /* background-color : #5e8aa3; */
+    border-radius: 10px;
+}
+
+.vl {
+    border-left: 2px solid #9e9e9e;
+    height: 400px;
+}
+
+a.action-btn{
+    color: #9e9e9e ;
+    margin: 0px 5px;
+
+}
+a.action-btn:hover{
+    cursor: pointer;
+}
+
+#toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 30%;
+    left:10%;
+  }
